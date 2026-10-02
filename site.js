@@ -106,13 +106,6 @@ function startPreview(card) {
       return;
     }
 
-    const start = Number(video.dataset.start);
-    const end = Number(video.dataset.end);
-
-    if (video.currentTime < start || video.currentTime >= end) {
-      video.currentTime = start;
-    }
-
     video.play().then(() => {
       if (card.dataset.previewRequested !== "true") {
         video.pause();
@@ -176,15 +169,6 @@ if (previewCards.length > 0) {
     });
     card.addEventListener("focusin", () => startPreview(card));
     card.addEventListener("focusout", () => pausePreview(card));
-
-    video?.addEventListener("timeupdate", () => {
-      const end = Number(video.dataset.end);
-      const start = Number(video.dataset.start);
-
-      if (video.currentTime >= end) {
-        video.currentTime = start;
-      }
-    });
 
     video?.addEventListener("error", () => {
       card.classList.add("preview-unavailable");
