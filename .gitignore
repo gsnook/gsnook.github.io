@@ -1,0 +1,2 @@
+# Local source media; the optimized WebM previews are deployed instead.
+assets/*.mp4

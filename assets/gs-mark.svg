@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+  <title id="title">Greg Snook</title>
+  <rect width="96" height="96" rx="16" fill="#111111"/>
+  <path d="M16 20h18v56H16z" fill="#d93836"/>
+  <path d="M39 20h18v56H39z" fill="#f3c900"/>
+  <path d="M62 20h18v56H62z" fill="#1769e0"/>
+</svg>
